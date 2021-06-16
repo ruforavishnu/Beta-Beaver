@@ -20,3 +20,13 @@ Changes made:
 3. Tested its working locally on localhost. It works correctly.
 4. Just modified a view file on welcome_message.php just for the sake of testing.
 
+
+Commit#2
+*********
+
+Modified on: June 16, 2021
+Time take: 10 minutes.
+
+Changes made:
+
+1. Just experimenting with and learning the nuances of mvc architecture.
