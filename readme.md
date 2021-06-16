@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10 = 10 mins or 0 hours 10 mins
+Total time taken in this project = 10+10 = 20 mins or 0 hours 20 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
