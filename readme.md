@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10 = 20 mins or 0 hours 20 mins
+Total time taken in this project = 10+10+30 = 50 mins or 0 hours 50 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -30,3 +30,17 @@ Time take: 10 minutes.
 Changes made:
 
 1. Just experimenting with and learning the nuances of mvc architecture.
+
+
+Commit#3
+**********
+
+
+Modified on: June 17, 2021
+Time take: 30 minutes.
+
+Changes made:
+
+1. Learning about Views and Models of MVC architecture
+
+
