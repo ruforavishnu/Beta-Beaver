@@ -15,10 +15,12 @@ class Blog extends CI_Controller
 	}
 	public function echoCompleteTableData()
 	{
-		$db = \Config\Database::connect();
+
 		
-		$query = $db->query('SELECT * FROM tbl_task');
-		$results = $query->results();
+		
+		$query = $this->db->query('SELECT * FROM tbl_task where id=\'17\'');
+		$query2 = $this->db->get('tbl_task');
+		$results = $query2->result();
 
 		foreach($results as $row)
 		{
@@ -29,6 +31,17 @@ class Blog extends CI_Controller
 		}
 
 		echo "<br><hr><br>". "Total Results:". count($results);
+
+		date_default_timezone_set("Asia/Calcutta");
+		$taskCreatedTimeStamp = date('Y-m-d H:i:s');
+
+		$data = array(
+			'taskDescription' => ' this is task created by code',
+			'timeStamp' 	  => $taskCreatedTimeStamp,
+			'taskStatus'      => 'just beginning'
+		);
+
+		$this->db->insert("tbl_task", $data);
 
 	}
 

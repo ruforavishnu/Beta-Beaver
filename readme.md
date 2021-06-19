@@ -55,3 +55,18 @@ Changes made:
 
 1. Learning about Models and Database architecture
 
+Commit#5
+**********
+
+
+Modified on: June 19, 2021
+Time take: 30 minutes.
+
+Changes made:
+
+1. Learnt to display , the D in CRUD the codeigniter way
+2. Learnt to insert , the C in CRUD the codeigniter way
+3. Learnt how to autoload libraries into codeigniter in the autoload.php file. A really powerful way to manage databases!
+
+
+

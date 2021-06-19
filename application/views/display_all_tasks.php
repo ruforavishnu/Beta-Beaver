@@ -1,23 +1,24 @@
-<!DOCTYPE html> 
-<html lang = "en"> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>CodeIgniter View Example</title> 
-   </head>
-	
-   <body> 
-      <h3>
-      	 Select * FROM TABLE
-      </h3>
-      <strong> Table: tbl_task</strong>
-      <p>
-      	Hey this is the view body and some blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      	blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+    <title>Alpha Albatross - PHP Todo App Dashboard</title>
+  </head>
+  <body>
 
-      </p>
-      <strong> Ends </strong>
-      
-   </body>
-	
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Beta Beaver - CodeIgniter PHP Framework - Todo App Dashboard</h3>
+         </div>
+      </div>
+   </div>
+</body>
 </html>
+
