@@ -13,6 +13,34 @@ class Blog extends CI_Controller
 
 		$this->load->view('viewtest1');
 	}
+	public function insertDataIntoTable()
+	{
+		date_default_timezone_set("Asia/Calcutta");
+		$taskCreatedTimeStamp = date('Y-m-d H:i:s');
+
+		$data = array(
+			'taskDescription' => ' updated by code',
+			'timeStamp' 	  => $taskCreatedTimeStamp,
+			'taskStatus'      => 'updated task'
+		);
+		$this->db->set($data);
+		$this->db->where("id", 23);
+		$this->db->update("tbl_task", $data );
+		
+		echo "updated row no 23 with new data";
+
+
+	}
+
+	public function deleteRow()
+	{
+
+		$this->db->delete("tbl_task", "id=26");
+
+		echo "deleted row no 26";
+	}
+
+
 	public function echoCompleteTableData()
 	{
 
@@ -34,7 +62,7 @@ class Blog extends CI_Controller
 
 		date_default_timezone_set("Asia/Calcutta");
 		$taskCreatedTimeStamp = date('Y-m-d H:i:s');
-
+		
 		$data = array(
 			'taskDescription' => ' this is task created by code',
 			'timeStamp' 	  => $taskCreatedTimeStamp,
