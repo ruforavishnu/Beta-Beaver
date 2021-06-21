@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30 = 110 mins or 1 hours 50 mins
+Total time taken in this project = 10+10+30+30+30+15 = 125 mins or 2 hours 05 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -81,6 +81,20 @@ Changes made:
 1. Learnt to Update, the U in CRUD
 2. Learnt to delete , the D in CRUD the codeigniter way
 3. Learning about Template Parser Library 
+
+
+
+Commit#7
+**********
+
+
+Modified on: June 21, 2021
+Time take: 15 minutes.
+
+Changes made:
+
+1. Learning how to pass parameter to view from controller
+
 
 
 
