@@ -1,0 +1,23 @@
+<?php
+
+class Stud_Controller extends CI_Controller
+{
+	function __construct()
+	{
+		parent::__construct();
+
+	}
+
+	public function index()
+	{
+		$query = $this->db->get("stud");
+		$data['records'] = $query->result();
+
+		$this->load->view('Stud_View', $data);
+	}
+
+	
+}
+
+
+?>
