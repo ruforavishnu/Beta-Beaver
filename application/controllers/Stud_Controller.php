@@ -16,6 +16,11 @@ class Stud_Controller extends CI_Controller
 		$this->load->view('Stud_View', $data);
 	}
 
+	public function add_student_view()
+	{
+		$this->load->view('Stud_add');
+	}
+
 	
 }
 
