@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30+15+25+20 = 170 mins or 2 hours 50 mins
+Total time taken in this project = 10+10+30+30+30+15+25+20+30 = 200 mins or 3 hours 20 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -120,6 +120,23 @@ Time taken: 20 minutes.
 Changes made:
 
 1. Learning the concept of routing/routes.
+
+
+Commit#10
+**********
+
+
+Modified on: June 24, 2021
+Time taken: 30 minutes.
+
+Changes made:
+
+1. Writing code for C of CRUD
+2. Fiddling with code and learning.
+3. Created a snippet for html-boilerplate in sublime text.
+
+
+
 
 
 

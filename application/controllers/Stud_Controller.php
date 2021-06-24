@@ -21,6 +21,22 @@ class Stud_Controller extends CI_Controller
 		$this->load->view('Stud_add');
 	}
 
+	public function add_student()
+	{
+		$data = array(
+						'roll_no' => $this->input->post('roll_no'),
+						'name'    => $this->input->post('name')
+		);
+
+		$this->Stud_Model->insert($data);
+
+		$query = $this->db->get("stud");
+		$data['records'] = $query->result();
+		$this->load->view('Stud_View', $data);
+	}
+
+	
+
 	
 }
 
