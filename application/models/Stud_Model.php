@@ -16,7 +16,7 @@ class Stud_Model extends CI_Model
 	}
 	public function delete($roll_no)
 	{
-		if($this->db->delete("stud", "roll_no=".$roll_no, ))
+		if($this->db->delete("stud", "roll_no=".$roll_no ))
 		{
 			return true;
 		}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,38 +9,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<title>Students View Page</title>
+	<title>Student Edit Page</title>
 
 </head>
 <body>
 
 	<p>
-		<table border="1">
-		<?php
-		
-		$i = 1;
-		echo "<tr>";
-		echo "<td>Sr#</td>";
-		echo "<td>Roll No.</td>";
-		echo "<td>Name</td>";
-		echo "<td>Edit</td>";
-		echo "<td>Delete</td>";
-		echo "</tr>";
+		<form method="" action="">
+			<?php
+				echo form_open('Stud_Controller/update_student');
+				echo form_hidden('old_roll_no', $old_roll_no);
+				echo form_label('Roll No.');
+				echo form_input(array(
+					'id'=>'roll_no',
+					'name' => 'roll_no',
+					'value'=> $records[0]->roll_no
+					 ));
+				echo "";
 
-		foreach($records as $r)
-		{
-			echo "<tr>";
-			echo "<td>". $i++ ."</td>";
-			echo "<td>". $r->roll_no ."</td>";
-			echo "<td>". $r->name ."</td>";
+				echo form_label("Name");
+				echo form_input(array(
+					'id'=>'name',
+					'name' => 'name',
+					'value'=> $records[0]->name
+				));
+				echo "";
 
-			echo "<td><a href='". base_url(). "index.php/stud/edit/".$r->roll_no. "'> Edit</a></td>";
-			echo "<td><a href='". base_url(). "index.php/stud/delete/".$r->roll_no. "'> Delete</a></td>";
-			echo "</tr>";
-		}
-		?>
-			
-		</table>
+				echo form_submit(array(
+					'id'=> 'submit',
+					'value' => 'Edit'
+				));
+				echo form_close();
+				
+
+
+			?>
+		</form>
+		 
 	</p>
 
 

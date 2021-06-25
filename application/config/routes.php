@@ -55,4 +55,11 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['stud'] = "Stud_Controller";
 $route['stud/add'] = "Stud_Controller/add_student";
+$route['stud/add_view'] = "Stud_Controller/add_student_view";
+$route['stud/edit/(\d+)'] = 'Stud_Controller/update_student_view/$1';
+$route['stud/delete/(\d+)'] = 'Stud_Controller/delete_student/$1';
+
+
+
+
 
