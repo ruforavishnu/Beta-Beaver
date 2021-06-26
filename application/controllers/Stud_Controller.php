@@ -56,7 +56,19 @@ class Stud_Controller extends CI_Controller
 
 		$query = $this->db->get('stud');
 		$data['records'] = $query->result();
-		$this->load->view('Stud_View', $data);
+
+		var_dump($data['records']);
+
+		/*
+		echo "<br> DebugText: old_roll_no". $old_roll_no;
+		foreach($row as $data['records'])
+		{
+			echo "<br>:id=".$row['id'];
+			echo "<br>:name=".$row['name'];
+		}*/
+
+
+		//$this->load->view('Stud_View', $data);
 
 
 	}

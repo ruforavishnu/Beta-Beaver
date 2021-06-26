@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30+15+25+20+30+30 = 230 mins or 3 hours 50 mins
+Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15 = 245 mins or 4 hours 05 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -148,6 +148,17 @@ Changes made:
 1. Fiddling with and learning the structure of CodeIgniter
 2. Learning how to use routing in localhost.
 
+Commit#12
+**********
+
+
+Modified on: June 26, 2021
+Time taken: 15 minutes.
+
+Changes made:
+
+1. Fiddling with code. Understanding how controllers and models react and respond with each other.
+2. Learnt how to put base_url configuration inside config.php
 
 
 
