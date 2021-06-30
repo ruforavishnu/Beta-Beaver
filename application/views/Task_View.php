@@ -31,13 +31,13 @@
 		foreach($records as $r)
 		{
 			echo "<tr>";
-			echo "<td>". $i++ ."</td>";
+			echo "<td>". $r->id ."</td>";
 			echo "<td>". $r->taskDescription ."</td>";
 			echo "<td>". $r->timeStamp ."</td>";
 			echo "<td>". $r->taskStatus ."</td>";
 			
 
-			echo "<td><a href='". base_url(). "index.php/stud/edit/".$r->id. "'> Edit</a></td>";
+			echo "<td><a href='". base_url(). "index.php/task/edit/".$r->id. "'> Edit Task</a></td>";
 			echo "<td><a href='". base_url(). "index.php/stud/delete/".$r->id. "'> Delete</a></td>";
 			echo "</tr>";
 		}

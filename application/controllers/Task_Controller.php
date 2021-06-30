@@ -11,6 +11,14 @@ class Task_Controller extends CI_Controller
 		$this->load->view('Task_View', $data);
 
 	}	
+	public function edit_task_view()
+	{
+		
+
+		$id = $this->uri->segment('3');
+		echo "This is from the edit task function ";
+		echo "The id to be deleted:". $id;
+	}
 }
 
 ?>
