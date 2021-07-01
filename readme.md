@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10 = 270 mins or 4 hours 30 mins
+Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10+30 = 300 mins or 5 hours 0 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -182,6 +182,20 @@ Changes made:
 
 1. Starting to understand how to connect routes, controllers and views together
 2. R aspect of CRUD complete.
+
+Commit#15
+**********
+
+
+Modified on: July 1, 2021
+Time taken: 30 minutes.
+
+Changes made:
+
+1. Trying and testing and figuring out how control passes from controller to view and then to model and how the control flow takes place
+2. In the process of writing code for the U aspect of CRUD
+
+
 
 
 
