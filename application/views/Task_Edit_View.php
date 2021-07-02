@@ -19,6 +19,43 @@
 		<?php echo "Value of taskId variable:".$taskId ?>
 
 
+		<form method="" action="">
+			<?php
+				echo form_open('Task_Controller/update_task');
+				echo form_hidden('reqdId' , $taskId);
+
+				echo form_label('Task Description');
+				echo form_input( array(
+					'id'    => 'taskDescription',
+					'name'  => 'taskDescription',
+					'value' => $records[0]->taskDescription
+				));
+
+				echo "";
+
+				echo form_label('Task Status');
+				echo form_input(array(
+					'id' => 'taskStatus',
+					'name' => 'taskStatus',
+					'value' => $records[0]->taskStatus
+				));
+
+				echo form_submit(array(
+					'id' => 'submit',
+					'value' => 'Update'
+				));
+
+				echo form_close();
+
+				
+
+
+
+			?>
+
+		</form>
+
+<!-- 
 		<form action="" method="POST" id="form_EditTask" style="margin:30px;">
 				<div class="row">
 					<div class="col">
@@ -41,7 +78,7 @@
 					
 				</div>
 				</form>
-				<button type="submit" form="form_EditTask" value="Edit Task" name="btn_EditTask" class="btn btn-primary">Update Task</button>
+				<button type="submit" form="form_EditTask" value="Edit Task" name="btn_EditTask" class="btn btn-primary">Update Task</button> -->
 	</p>
 
 

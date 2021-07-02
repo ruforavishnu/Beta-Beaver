@@ -16,6 +16,9 @@ class Task_Controller extends CI_Controller
 		$taskId = $this->uri->segment('3');
 		$data['taskId'] = $taskId;
 		
+		$query = $this->db->get_where('tbl_task', array('id' => $taskId));
+		$data['records'] = $query->result();
+		
 		$this->load->view('Task_Edit_View', $data);
 	}
 
