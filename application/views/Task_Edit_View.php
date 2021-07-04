@@ -48,6 +48,8 @@
 
 				echo form_close();
 
+				log_message('info', 'Invoked from inside the Task Edit View Page');
+
 				
 
 
