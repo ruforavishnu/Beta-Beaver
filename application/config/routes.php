@@ -61,6 +61,9 @@ $route['stud/delete/(\d+)'] = 'Stud_Controller/delete_student/$1';
 
 $route['task'] = "Task_Controller";
 $route['task/edit/(\d+)'] = "Task_Controller/edit_task_view/$1";
+$route['debug'] = "Debug_Controller";
+
+
 
 
 

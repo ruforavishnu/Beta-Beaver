@@ -10,6 +10,7 @@ class Task_Controller extends CI_Controller
 
 		$this->load->view('Task_View', $data);
 
+
 	}	
 	public function edit_task_view()
 	{
@@ -24,27 +25,32 @@ class Task_Controller extends CI_Controller
 
 	public function edit_task()
 	{
+		Debug_Controller::errors.append('Control passed from Task_Edit_View to Task_Controller::edit_task() method');
+		
+
 		$taskId = $this->uri->segment('3');
 		echo "This is from the edit task function ";
 		echo "The id to be deleted:". $taskId;
 
+		echo "task Description from post parameter:".$this->input->post('taskDescription');
 
+/*
 		$date_default_timezone_set('Asia/Calcutta');
 		$taskCreatedTimeStamp = date('Y-m-d H:i:s');
 
 		$data = array(
-			'taskDescription' => $this->input->post('txt_EditTaskDescription'),
+			'taskDescription' => $this->input->post('taskDescription'),
 			'timeStamp'		  => $taskCreatedTimeStamp,
-			'taskStatus' 	  => $this->input->post('select_TaskStatus')
+			'taskStatus' 	  => $this->input->post('taskStatus')
 		);
 
 		$this->Task_Model->update($data, $taskId);
 
 
 		$query = $this->db->get('tbl_task');
-		$records = $query->result();
+		$data['records'] = $query->result();
 
-		var_dump($records);
+		$this->load->view('Task_View', $data);*/
 
 	}
 }

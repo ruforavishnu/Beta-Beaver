@@ -14,6 +14,7 @@
 </head>
 <body>
 
+
 	<p>
 
 		<?php echo "Value of taskId variable:".$taskId ?>
@@ -21,7 +22,7 @@
 
 		<form method="" action="">
 			<?php
-				echo form_open('Task_Controller/update_task');
+				echo form_open('Task_Controller/edit_task');
 				echo form_hidden('reqdId' , $taskId);
 
 				echo form_label('Task Description');
@@ -55,30 +56,6 @@
 
 		</form>
 
-<!-- 
-		<form action="" method="POST" id="form_EditTask" style="margin:30px;">
-				<div class="row">
-					<div class="col">
-						<label for="editTaskForm">Edit Task</label>
-						<input type="text" name="txt_EditTaskDescription" class="form-control">      
-					</div>
-					
-					<div class="col">
-						<label for="addTaskForm">Task Status</label>
-						<select class="form-control" name="select_TaskStatus">
-						<option selected>Not-Begun</option>
-						<option value="Started">Started</option>
-						<option value="Little-done">Little-done</option>
-						<option value="Half-done">Half-done</option>
-						<option value="Almost-done">Almost-done</option>
-						<option value="Completed">Completed</option>
-						</select>
-						<input type="hidden" name="hiddeninput_buttonID" value = "<?php echo $taskId; ?>">
-					</div>
-					
-				</div>
-				</form>
-				<button type="submit" form="form_EditTask" value="Edit Task" name="btn_EditTask" class="btn btn-primary">Update Task</button> -->
 	</p>
 
 
