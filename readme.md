@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10+30+20+20+10 = 350 mins or 5 hours 50 mins
+Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10+30+20+20+10+20 = 370 mins or 6 hours 10 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -232,6 +232,16 @@ Changes made:
 
 1. Trying to learn to use the log_message function.
 
+Commit#19
+**********
+
+
+Modified on: July 5, 2021
+Time taken: 20 minutes.
+
+Changes made:
+
+1. Figuring out how to handle error logging.
 
 
 

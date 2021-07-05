@@ -17,7 +17,11 @@
 
 	<p>
 
-		<?php echo "Value of taskId variable:".$taskId ?>
+		<?php echo "Value of taskId variable:".$taskId ;
+		log_message('info', 'testing log_message');
+		//show_error('Testing error display');
+
+		?>
 
 
 		<form method="" action="">
