@@ -18,7 +18,7 @@
 	<p>
 
 		<?php echo "Value of taskId variable:".$taskId ;
-		log_message('info', 'testing log_message');
+		
 		//show_error('Testing error display');
 
 		?>
@@ -26,7 +26,15 @@
 
 		<form method="" action="">
 			<?php
-				echo form_open('Task_Controller/edit_task');
+
+				$reqdPath = APPPATH.'controllers\Debug_Messages.php';
+				echo 'Value of reqdPath:'.$reqdPath;
+				require_once($reqdPath);
+				echo "<br";
+
+				Debug_Messages::add_log('Task_Edit_View loaded. About to load the form using codeigniter code');
+
+				echo form_open('Task_Controller/update_task');
 				echo form_hidden('reqdId' , $taskId);
 
 				echo form_label('Task Description');

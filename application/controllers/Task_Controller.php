@@ -20,15 +20,17 @@ class Task_Controller extends CI_Controller
 		$query = $this->db->get_where('tbl_task', array('id' => $taskId));
 		$data['records'] = $query->result();
 		
+		
 		$this->load->view('Task_Edit_View', $data);
 	}
 
-	public function edit_task()
+	public function update_task()
 	{
-		log_message('error', ' log_message invoked from edit_task() method');
+		
 		/*Debug_Controller::errors.append('Control passed from Task_Edit_View to Task_Controller::edit_task() method');
 		*/
-
+		Debug_Messages::add_log('control reached update_task() method');
+		
 		$taskId = $this->uri->segment('3');
 		echo "This is from the edit task function ";
 		echo "The id to be deleted:". $taskId;
