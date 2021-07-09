@@ -26,11 +26,11 @@ class Task_Controller extends CI_Controller
 
 	public function update_task()
 	{
-		
+		show_error('update_task method was invoked by the html form element');
 		/*Debug_Controller::errors.append('Control passed from Task_Edit_View to Task_Controller::edit_task() method');
 		*/
-		Debug_Messages::add_log('control reached update_task() method');
-		
+		//Debug_Messages::add_log('control reached update_task() method');
+
 		$taskId = $this->uri->segment('3');
 		echo "This is from the edit task function ";
 		echo "The id to be deleted:". $taskId;

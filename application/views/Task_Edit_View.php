@@ -27,12 +27,15 @@
 		<form method="" action="">
 			<?php
 
-				$reqdPath = APPPATH.'controllers\Debug_Messages.php';
+
+				//show_error('About to load the form inside Task_Edit_View page');
+
+				/*$reqdPath = APPPATH.'controllers\Debug_Messages.php';
 				echo 'Value of reqdPath:'.$reqdPath;
 				require_once($reqdPath);
 				echo "<br";
 
-				Debug_Messages::add_log('Task_Edit_View loaded. About to load the form using codeigniter code');
+				Debug_Messages::add_log('Task_Edit_View loaded. About to load the form using codeigniter code');*/
 
 				echo form_open('Task_Controller/update_task');
 				echo form_hidden('reqdId' , $taskId);

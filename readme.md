@@ -3,7 +3,7 @@ Project: Web app with TODO app functionality using CodeIgniter PHP Framework
 Commit file details
 ********************
 
-Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10+30+20+20+10+20 = 370 mins or 6 hours 10 mins
+Total time taken in this project = 10+10+30+30+30+15+25+20+30+30+15+15+10+30+20+20+10+20+30+10 = 410 mins or 6 hours 50 mins
 
 Changes are written in chronological order. So the latest commit details are at the bottom of the file.
 
@@ -243,6 +243,27 @@ Changes made:
 
 1. Figuring out how to handle error logging.
 
+Commit#20
+**********
+
+
+Modified on: July 9, 2021
+Time taken: 30 minutes.
+
+Changes made:
+
+1. Error handling of Codeigniter seriously sucks. Writing a library for error handling from scratch.
+
+Commit#21
+**********
+
+
+Modified on: July 9, 2021
+Time taken: 10 minutes.
+
+Changes made:
+
+1. Seems that codeigniter has methods show_error and log_message for displaying errors. But I want to display errors ir realtime. Dunno if codeigniter has that option. Such a popular framework and they dont have error handling capabilities! 
 
 
 
